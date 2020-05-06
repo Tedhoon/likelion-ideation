@@ -3,9 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const printer = document.querySelector('.printer'),
           printBtn = document.querySelector('.print-btn'),
           hashTag = document.querySelector('.hash-tag'),
-          lightbox = document.querySelector('.lightbox'),
-          lightboxImage = document.querySelector('.lightbox-image'),
-          resetBtn = document.querySelector('.reset_btn');
+          advertise = document.querySelector('.advertise'),
+          printTray = document.querySelector('.printer-tray');
 
     let printing = false;
 
@@ -13,13 +12,15 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!printing) printer.classList.add('printing');
     });
 
-    hashTag.addEventListener('click', () => lightbox.classList.add('show'));
-
-    lightbox.addEventListener('click', () => lightbox.classList.remove('show'));
-
-    resetBtn.addEventListener('click',(e) => {
-        // lightbox.classList.remove('show');
-        e.stopPropagation()
-        location.reload()
-    })
+    hashTag.addEventListener('click', () => {
+        if(printTray.className === 'printer-tray'){
+            printTray.classList.add('show-up')
+            advertise.classList.add('adshow')
+        }
+        else{
+            printTray.classList.remove('show-up')
+            advertise.classList.remove('adshow')
+        }
+        
+    });
 });

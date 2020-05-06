@@ -182,7 +182,22 @@ body {
     border-radius: 0.02em 0.02em 0 0;
     padding: 0.04em;
     transform-origin: 0 100%;
-    transform: rotateX(-90deg) translateX(-50%);
+    transform: rotateX(-90deg) translateX(-50%);   
+}
+
+.show-up{
+    transition: all ease 2s;
+    transform: rotateX(-140deg) translateX(-50%);
+    width: 0.75rem;   
+    height: 0.6rem;
+    bottom: 600px;
+    border-radius: 50px;
+    background-image: linear-gradient(#0abfbc, #fc354c);
+    padding: 0.03em;
+    border: none;
+    -webkit-box-shadow: 14px -15px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 14px -15px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 14px -15px 10px 0px rgba(0,0,0,0.75);
 }
 
 .printer-tray-paper {
@@ -191,7 +206,7 @@ body {
     align-items: center;
     width: 100%;
     height: 100%;
-    padding: 0.005em;
+    padding: 0.01em;
     background-color: #eee;
     border: 0.001em solid #ddd;
     overflow: hidden;
@@ -207,8 +222,21 @@ body {
     height: 100%;
     object-fit: cover;
     cursor: pointer;
-    font-size: 0.03rem;
+    font-size: 0.025rem;
     transform: rotateY(180deg) rotate(180deg);
+}
+
+.advertise{
+    opacity: 0;
+    position: absolute;
+    top: 10px;
+    width: 0;
+    transform: rotateY(180deg) rotate(180deg);
+}
+.adshow{
+    opacity: 1;
+    width: 120px;
+    transition: all ease 2s;
 }
 
 /* Lightbox */

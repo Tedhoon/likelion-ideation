@@ -40,7 +40,8 @@ body {
     transform-origin: 50% 100%;
     transform-style: preserve-3d;
     transform: translate(-50%, -0.5em) rotateX(90deg);
-    background-image: linear-gradient(#0abfbc, #fc354c);
+    background-image: linear-gradient(#78d5ec,#fcadb6
+    );
 }
 
 .printer-top::before {
@@ -138,8 +139,8 @@ body {
 .printer-front {
     transform-style: preserve-3d;
     transform: translateX(-50%);
-    background-image: linear-gradient(#fc354c
-    , #0abfbc);
+    background-image: linear-gradient(#fcadb6
+    , #78d5ec);
 }
 
 .printer-front::before {
@@ -192,7 +193,8 @@ body {
     height: 0.6rem;
     bottom: 600px;
     border-radius: 50px;
-    background-image: linear-gradient(#0abfbc, #fc354c);
+    background-image: linear-gradient(#fcadb6
+    , #78d5ec);
     padding: 0.03em;
     border: none;
     -webkit-box-shadow: 14px -15px 10px 0px rgba(0,0,0,0.75);
